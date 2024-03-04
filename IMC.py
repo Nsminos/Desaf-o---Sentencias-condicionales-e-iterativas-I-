@@ -12,21 +12,21 @@ W = float(input("Ingrese el peso de la persona en Kg:\n>"))
 H = float(input("Ingrese la altura en metros en metros:\n>"))
 
 # Formula de IMC
-IMC = W / H**2
+IMC = (W /( H**2))
+# :.2f indica que debe mostrar un float con 2 decimales y cualquier parte entera
+formatted = "La cantidad de IMC en kg/m2 es: {:.2f}".format(IMC)
+print(formatted)
 
-print(f"El indice de masa corporal es de: {math.ceil(IMC)}")
-
-IMC = 
-if IMC < 18.5
+if IMC < 18.5:
     print("Bajo Peso")
-elif IMC >=18.5 and IMC < 25
+elif IMC >=18.5 and IMC < 25:
     print("Adecuado")
-elif IMC >= 25 and IMC < 30
+elif IMC >= 25 and IMC < 30:
     print("Sobrepeso")
-elif IMC >= 30 and IMC < 35
+elif IMC >= 30 and IMC < 35:
     print("Obesidad Grado I")
-elif IMC >= 35 and IMC < 40
+elif IMC >= 35 and IMC < 40:
     print("Obesidad Grado II")
-else IMC >= 40
+else:
     print("Obesidad Grado III")
 
